@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es2018",
+		"module": "commonjs",
+		"lib": [
+			"ES2019"
+		],
+		"declaration": false,
+		"outDir": "./lib",
+		"rootDir": "./src",
+		"removeComments": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"sample"
+	]
+}

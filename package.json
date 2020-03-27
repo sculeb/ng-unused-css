@@ -1,0 +1,51 @@
+{
+	"name": "ng-unused-css",
+	"version": "0.0.2",
+	"description": "Linter that detects unused css classes in Angular applications",
+	"keywords": [
+		"angular",
+		"css",
+		"scss",
+		"linter",
+		"ci",
+		"unused"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sculeb/ng-unused-css"
+	},
+	"bugs": {
+		"url": "https://github.com/sculeb/ng-unused-css/issues"
+	},
+	"bin": {
+		"ng-unused-css": "lib/index.js"
+	},
+	"files": [
+		"lib/**/*"
+	],
+	"scripts": {
+		"build": "rimraf ./lib && npx tsc",
+		"watch": "npx tsc --watch",
+		"lint": "npx eslint . --ext .ts"
+	},
+	"author": {
+		"name": "René Albers",
+		"email": "renepaulalbers@gmail.com",
+		"url": "https://github.com/sculeb"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"htmlparser2": "4.1.0",
+		"log-symbols": "3.0.0",
+		"rxjs": "6.5.4",
+		"typescript": "3.8.3"
+	},
+	"devDependencies": {
+		"@types/node": "13.9.3",
+		"@typescript-eslint/eslint-plugin": "2.25.0",
+		"@typescript-eslint/parser": "2.25.0",
+		"eslint": "6.8.0",
+		"rimraf": "3.0.2",
+		"typescript": "3.8.3"
+	}
+}
